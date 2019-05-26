@@ -4,6 +4,7 @@ def Main():
     # the users will be asked for his Credntials
     # all other classes will be connected to this class
     # there will be a while loop that takes the users clothes type
+    # TEST
 
 
 
