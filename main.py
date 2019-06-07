@@ -45,7 +45,8 @@ def Main():
 
 
         elif choice ==2:
-            #will show the user the reciept
+            #Here we will get the prices from the function that calaculate the prices
+            #Then, we will show the user the reciept
             print("---------------Recipet-------------------")
             print("short:        " + shortCount)
             print("tshirts:      " + tshirtCount)
