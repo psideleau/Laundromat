@@ -1,31 +1,39 @@
+
+
 def Main():
 
-    raw_input("Enter your username")
-    raw_input("Enter your password")
+    username = input("Enter your username")
+    password = input("Enter your password")
 
     #here we will send Credientials to login function
     #If login successful user can see the menu 
 
     def Menu():
-        print "Welcome to AJ Laundry"
-        print "1. Enter clothes to be washed"
-        print "2. Show Reciept"
-        print "3. Exit"
+        print ("Welcome to AJ Laundry")
+        print ("1. Enter clothes to be washed")
+        print ("2. Show Reciept")
+        print ("3. Exit")
 
     loop = True
 
     while loop:
-        print Menu()
+        print (Menu())
         choice = input("Enter your choice: ")
 
-        if choice ==1:
+        if choice == '1':
+            
             #will ask user for input
 
             loop1 = True
             while loop1:
+                tshirtCount = '0'
+                shortCount = '0'
+                socksCount = '0'
+                pillowCaseCount = '0'
+                jacketCount = '0'
 
 
-                Clothes = raw_input("Enter clothes you want to wash (when finish enter e): ")
+                Clothes = input("Enter clothes you want to wash (when finish enter e): ")
                 if Clothes == 'short':
                     shortCount = input("how many shorts: ")
                 if Clothes == 'tshirt':
@@ -44,7 +52,7 @@ def Main():
 
 
 
-        elif choice ==2:
+        elif choice == '2':
             #Here we will get the prices from the function that calaculate the prices
             #Then, we will show the user the reciept
             print("---------------Recipet-------------------")
@@ -55,11 +63,11 @@ def Main():
             print("Jackets:      " + jacketCount)
 
 
-        elif choice ==3:
+        elif choice =='3':
             loop = False
 
         else:
-            raw_input("Wrong choice, Enter a valid choice")
+            input("Wrong choice, Enter a valid choice")
 
 
 
