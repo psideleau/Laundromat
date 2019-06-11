@@ -48,9 +48,14 @@ def Main():
                 if Clothes == 'e':
                     loop1 = False
 
+            exedite = input("Do you want expedited cleaning or normal (enter 1 for expedite 2 for normal")
+            ironing = input("Enter 1 for ironing 2 for no ironing")
+            prefume = input("Enter 1 for prefume 2 for no")
+
                 #After that we will send input of clothes count to a function that handle the prices
-
-
+                #After geting the cleaning price we will send the choices to a function
+                #that will calculate the time will take for cleaning the clothes and final price
+                
 
 
         elif choice == '2':
