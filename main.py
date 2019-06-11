@@ -21,16 +21,17 @@ def Main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
+            tshirtCount = "0"
+            shortCount = "0"
+            socksCount = "0"
+            pillowCaseCount = "0"
+            jacketCount = "0"
             
             #will ask user for input
 
             loop1 = True
             while loop1:
-                tshirtCount = '0'
-                shortCount = '0'
-                socksCount = '0'
-                pillowCaseCount = '0'
-                jacketCount = '0'
+                
 
 
                 Clothes = input("Enter clothes you want to wash (when finish enter e): ")
