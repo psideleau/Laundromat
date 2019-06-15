@@ -1,7 +1,10 @@
 class Orderprice:
+<<<<<<< HEAD
     def Totaldue(self, Total):
         Total
         
+=======
+>>>>>>> a97658c62a1aa16982cbe95623af50ece80cabb4
     def dropTIme(self, droptime):
         if droptime in range(9, 15):
             print ("Drop time of " ,droptime, "hours OK")
