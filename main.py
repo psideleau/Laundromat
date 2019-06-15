@@ -1,5 +1,5 @@
 from login_service import login
-from Orderprice import Orderprice
+from Orderprice import *
 
 def Main():
 
@@ -45,16 +45,25 @@ def Main():
                     loop1 = False
 
             exedite = input("Do you want expedited cleaning or normal (enter 1 for expedite 2 for normal")
-            ironing = input("Enter 1 for ironing 2 for no ironing")
+            iron = input("Enter 1 for ironing 2 for no ironing")
             prefume = input("Enter 1 for prefume 2 for no")
-            droptime = input("Enter Drop time ")
+            droptime = int(input("Enter Drop time "))
+            comment = input("Enter any other information about your items: ")
 
                 #After that we will send input of clothes count to a function that handle the prices
                 #After geting the cleaning price we will send the choices to a function
                 #that will calculate the time will take for cleaning the clothes and final price
+            total = 20
             orderprice = Orderprice()
-            orderprice.dropTIme(droptime)
-                
+            orderprice.totaldue(total)
+            orderprice.droptime(droptime)
+            orderprice.expedite(exedite)
+            orderprice.prefume(prefume)
+            orderprice.iron(iron)
+            
+
+            
+
 
 
         elif choice == '2':
@@ -66,6 +75,8 @@ def Main():
             print("Socks:        " + socksCount)
             print("pillow cases: " + pillowCaseCount)
             print("Jackets:      " + jacketCount)
+            print("***************************************")
+            orderprice.printTotaldue()
 
 
         elif choice =='3':
