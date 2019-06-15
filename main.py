@@ -1,12 +1,8 @@
-
+from login_service import login
+from Orderprice import Orderprice
 
 def Main():
 
-    username = input("Enter your username")
-    password = input("Enter your password")
-
-    #here we will send Credientials to login function
-    #If login successful user can see the menu 
 
     def Menu():
         print ("Welcome to AJ Laundry")
@@ -51,10 +47,13 @@ def Main():
             exedite = input("Do you want expedited cleaning or normal (enter 1 for expedite 2 for normal")
             ironing = input("Enter 1 for ironing 2 for no ironing")
             prefume = input("Enter 1 for prefume 2 for no")
+            droptime = input("Enter Drop time ")
 
                 #After that we will send input of clothes count to a function that handle the prices
                 #After geting the cleaning price we will send the choices to a function
                 #that will calculate the time will take for cleaning the clothes and final price
+            orderprice = Orderprice()
+            orderprice.dropTIme(droptime)
                 
 
 
