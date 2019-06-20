@@ -29,10 +29,14 @@ class Orderprice:
                 self.Totaldue = self.Totaldue+3
             else:
                 self.Totaldue = self.Totaldue
+
+        def comment(self, comments):
+            self.comment = comments
        
         
 
         def printTotaldue(self):
             print("Total price = ", self.Totaldue)
-            print("Estimated Time = ", self.estimatedtime)
-            print("drop time = ", self.droptime)
+            print("drop time = ", self.droptime, "00 hours")
+            print("Estimated Pick up Time = ", self.estimatedtime,"00 hours")
+            print("Added Comment: ", self.comment)
