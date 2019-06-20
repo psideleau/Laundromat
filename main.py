@@ -32,21 +32,21 @@ def Main():
 
                 Clothes = input("Enter clothes you want to wash (when finish enter e): ")
                 if Clothes == 'short':
-                    shortCount = input("how many shorts: ")
+                    shortCount = int(input("how many shorts: "))
                 if Clothes == 'tshirt':
-                    tshirtCount = input("how many tshirts: ")
+                    tshirtCount = int(input("how many tshirts: "))
                 if Clothes == 'socks':
-                    socksCount = input("how many socks: ")
+                    socksCount = int(input("how many socks: "))
                 if Clothes == "pillow case":
-                    pillowCaseCount = input("how many pillow cases: ")
+                    pillowCaseCount = int(input("how many pillow cases: "))
                 if Clothes == "Jacket":
-                    jacketCount = input("how many Jakcets: ")
+                    jacketCount = int(input("how many Jakcets: "))
                 if Clothes == 'e':
                     loop1 = False
 
-            exedite = input("Do you want expedited cleaning or normal (enter 1 for expedite 2 for normal")
-            iron = input("Enter 1 for ironing 2 for no ironing")
-            prefume = input("Enter 1 for prefume 2 for no")
+            exedite = int(input("Do you want expedited cleaning or normal (enter 1 for expedite 2 for normal"))
+            iron = int(input("Enter 1 for ironing 2 for no ironing"))
+            prefume = int(input("Enter 1 for prefume 2 for no"))
             droptime = int(input("Enter Drop time "))
             comment = input("Enter any other information about your items: ")
 
@@ -60,7 +60,7 @@ def Main():
             orderprice.expedite(exedite)
             orderprice.prefume(prefume)
             orderprice.iron(iron)
-            
+            orderprice.comment(comment)
 
             
 
@@ -70,11 +70,11 @@ def Main():
             #Here we will get the prices from the function that calaculate the prices
             #Then, we will show the user the reciept
             print("---------------Recipet-------------------")
-            print("short:        " + shortCount)
-            print("tshirts:      " + tshirtCount)
-            print("Socks:        " + socksCount)
-            print("pillow cases: " + pillowCaseCount)
-            print("Jackets:      " + jacketCount)
+            print("short:        " , shortCount)
+            print("tshirts:      " , tshirtCount)
+            print("Socks:        " , socksCount)
+            print("pillow cases: " , pillowCaseCount)
+            print("Jackets:      " , jacketCount)
             print("***************************************")
             orderprice.printTotaldue()
 
