@@ -9,6 +9,7 @@ print(host_name.center(45))
 for i in range(len(list_clothes)):
     print(list_clothes[i].center(30),'$',list_price[i])
 
+
 user_name=input('Please enter your name')
 print('')
 print('Your session is being logged')
