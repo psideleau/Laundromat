@@ -36,7 +36,8 @@ class Orderprice:
         
 
         def printTotaldue(self):
-            print("Total price = ", self.Totaldue)
+            print("Total price = $", self.Totaldue)
             print("drop time = ", self.droptime, "00 hours")
             print("Estimated Pick up Time = ", self.estimatedtime,"00 hours")
             print("Added Comment: ", self.comment)
+            print("Thank you")
